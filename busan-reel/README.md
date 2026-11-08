@@ -58,3 +58,17 @@ python3 edit/render2.py preview && python3 edit/render2.py segments && python3 e
 ```
 python3 edit/render3.py segments && python3 edit/render3.py final
 ```
+
+## 스타일 4 — `edit/render4.py`
+
+네 번째 레퍼런스 릴스(@samiedave_, `Dep35SrowCY`, 17.5초, 음원 Jordan Adetunji - KEHLANI (slowed & reverb)) 스타일.
+
+- 컷 49개(0.12~0.9초) 빠른 POV 몽타주, 레퍼런스와 같은 25fps 컷 타이밍
+- 낮 → 밤 흐름, 차분한 올리브·청록톤, 비네트, 그레인
+- 자막: `<<VLOG_01` / `BUSAN>>` (처음 2.6초)
+- 효과: 흰 테두리 스냅샷 컷 3개, 세로 사진 필러박스, 실루엣 화이트아웃, 네온 휩
+- 레퍼런스 영상은 `reel4/reel.mp4`, 출력은 `edit4/busan_style4.mp4`
+
+```
+python3 edit/render4.py segments && python3 edit/render4.py final
+```
