@@ -1,0 +1,10 @@
+footage/
+reel/
+edit/segs/
+edit/pv/
+edit/qa/
+*.mp4
+*.jpg
+*.wav
+*.html
+edit/list.txt
