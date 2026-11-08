@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build the caption fonts used by render2.py from @fontsource npm packages.
+"""Build the caption fonts used by render2.py / render_vlog.py from @fontsource npm packages.
 
     cd busan-reel/fonts
-    npm pack @fontsource/nanum-pen-script @fontsource/dancing-script
+    npm pack @fontsource/nanum-pen-script @fontsource/dancing-script @fontsource/gowun-dodum
     for f in *.tgz; do d=${f%.tgz}; mkdir -p $d && tar xzf $f -C $d --strip-components=1; done
     python3 ../edit/make_fonts.py
 
@@ -54,3 +54,4 @@ combine('fontsource-nanum-pen-script-*/files/nanum-pen-script-*-400-normal.woff2
 f = TTFont(glob.glob('fontsource-dancing-script-*/files/dancing-script-latin-700-normal.woff2')[0])
 f.flavor = None
 f.save('DancingScript.ttf')
+combine('fontsource-gowun-dodum-*/files/gowun-dodum-*-400-normal.woff2', 'GowunDodum.ttf')  # render_vlog.py
