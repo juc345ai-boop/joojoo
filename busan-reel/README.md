@@ -42,3 +42,19 @@ python3 edit/render.py final      # 합치기 + 그레인 + 오디오 → edit/b
 ```
 python3 edit/render2.py preview && python3 edit/render2.py segments && python3 edit/render2.py final
 ```
+
+## 스타일 3 — `edit/render3.py`
+
+세 번째 레퍼런스 릴스(@rodrigokaskus, `DdaTOQFRSPS`, 16.9초, 음원 Tame Impala - Loser) 스타일.
+
+- 컷 22개, 레퍼런스 컷 타이밍 그대로
+- 따뜻한 골드 필름톤, 비네트, 그레인
+- 인트로: 검은 화면 가운데 작은 박스가 6프레임 동안 커지며 전체 화면으로
+- 자막: "A Trip To / Busan", "Shot On DJI / Osmo Pocket 4"
+- 3x3 그리드 콜라주(칸이 하나씩 다른 영상으로 바뀌고 가운데에 메인 컷), 세로 띠 5분할 화면,
+  휩 블러, 화이트 플래시
+- 레퍼런스 영상은 `reel3/reel.mp4`, 출력은 `edit3/busan_style3.mp4`
+
+```
+python3 edit/render3.py segments && python3 edit/render3.py final
+```
